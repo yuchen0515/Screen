@@ -11,8 +11,8 @@ class WindowManager
 {
 public:
 	using ScreenIndex = std::vector<Screen>::size_type;
+	WindowManager();
 	void Clear(ScreenIndex i);
 private:
-	std::vector<Screen> screens;
-	//std::vector<Screen> screens{ Screen(24, 80, ' ') };
+	std::vector<Screen> _screens;
 };
