@@ -2,6 +2,7 @@
 #include <string>
 
 #include "Screen.h"
+#include "WindowManager.h"
 
 Screen::Screen(pos ht, pos wd, char c, int count)
 {
