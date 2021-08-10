@@ -1,0 +1,7 @@
+#include "WindowManager.h"
+
+void WindowManager::Clear(ScreenIndex i)
+{
+	Screen& s = screens[i];
+	s._contents = std::string(s._height * s._width, ' ');
+}
