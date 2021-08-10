@@ -2,16 +2,15 @@
 #include <string>
 #include <vector>
 
-#include "Screen.h"
 #include "WindowManager.h"
+#include "Screen.h"
 
 using namespace std;
 
 int main()
 {
-	//WindowManager mgr;
+	WindowManager mgr;
 	Screen myscreen(24, 80, 'a');
-	//Screen myscreen2(1080, 1980, 'a', 0);
 
 	myscreen.Move(2, 3).Set('#');
 	Screen temp = myscreen.move(9, 9);
@@ -27,6 +26,6 @@ int main()
 	Screen scr(ht, wd, ' ');
 	Screen* p = &scr;
 	char c = p->Get();	// fetches the get member function from the object to which p points
-  
+
 	system("pause");
 }
