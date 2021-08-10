@@ -10,7 +10,6 @@ Screen::Screen(pos ht, pos wd, char c, int count)
 	std::string s(ht * wd, c);
 	_contents = s;
 	_ctr = count;
-
 }
 
 char Screen::Get() const
