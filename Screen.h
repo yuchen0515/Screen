@@ -3,13 +3,12 @@
 #include <iostream>
 #include <vector>
 
-#include "WindowManager.h"
 
 class WindowManager;
 
 class Screen
 {
-	friend void WindowManager::Clear(ScreenIndex i);
+	friend class WindowManager;
 public:
 	using pos = std::string::size_type;
 public:

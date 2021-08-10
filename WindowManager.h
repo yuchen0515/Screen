@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 
-#include "Screen.h"
 
 class Screen;
 
