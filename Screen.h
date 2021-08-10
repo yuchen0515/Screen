@@ -12,7 +12,6 @@ class Screen
 	friend void WindowManager::Clear(ScreenIndex i);
 public:
 	using pos = std::string::size_type;
-	// typedef std::string::size_type pos;
 public:
 	Screen() = default;
 	Screen(pos ht, pos wd, char c, int count);
