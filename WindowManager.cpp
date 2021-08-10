@@ -3,7 +3,9 @@
 
 WindowManager::WindowManager()
 {
-	_screens = { Screen(24, 80, ' ') };
+	_screens = {
+        Screen(24, 80, ' ')
+    };
 }
 
 void WindowManager::Clear(ScreenIndex i)
